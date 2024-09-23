@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <link rel="stylesheet" href="/css/donestyle.css"> 
+</head>
+<body>
+
+
+
+<div id="tb">
+    <p>voting ends in</p>
+<p id="demo"></p>
+</div>
+<form id="timer" action="welcome" method="post">
+    <input type="hidden"  name="time" value="3">
+</form>
+
+
+        <h1>YOUR  VOTING IS COUNTED</h1>
+   <form action="index.html" >
+    <button type="submit" id="lo">LOGOUT</button>
+   </form>
+   </div>
+
+
+<div id="feed">
+    <div id="logobox">
+    <div id="logo"></div>
+</div>
+<p id="w"></p>
+<form action="done" method="post">
+    <b style="font-size: 25px;">feedback:</b> <input type="text" id="fed" name="feed" height="100px" placeholder="type here">
+    <button type="submit" id="fb" >submit</button>
+</form>
+<br>
+<hr>
+<form action="done" method="post">
+    <b style="font-size: 25px;">To-Delete-Your-Feedback:</b> <input type="hidden" name="del"   value="1">
+    <button type="submit" id="fb" onclick="loo()">click here</button>
+</form>
+<br>
+
+<ul class="feed">
+{{#each feeds}}
+<hr>
+<li id="li">{{this}}</li>
+<hr>
+{{/each}}
+</ul>
+</div>
+
+<script src="/wel.js"></script>
+    
+</body>
+</html>

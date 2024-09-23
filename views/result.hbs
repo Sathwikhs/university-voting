@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/resultstyle.css">
+</head>
+<body>
+
+ <h1>VOTING FINAL RESULT</h1>
+    <div id="container">
+        <div id="logobox">
+            <div id="logo"></div>
+        </div>
+
+
+    <table id="tab">
+        <tr>
+            <th>SNO.</th>
+            <th>PICTURE</th>
+            <th>NAME</th>
+            <th>SYMBOL</th>
+            <th>VOTES</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><img src="/image/srk.jpeg" width="120px" height="100px"></td>
+            <td>SHARUKH KHAN</td>
+            <td><img src="/image/auto.png" width="110px" height="100px"></td>
+            <td id="count">{{vot1}}</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img src="/image/salman.jpg" width="120px" height="100px"></td>
+            <td>SALMAN KHAN</td>
+            <td><img src="/image/helicopter.png" width="110px" height="100px"></td>
+            <td id="count">{{vot2}}</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img src="/image/aamir.avif" width="120px" height="100px"></td>
+            <td>AAMIR KHAN</td>
+            <td><img src="/image/laptop.png" width="110px" height="100px"></td>
+            <td id="count">{{vot3}}</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img src="/image/akshay.avif" width="120px" height="100px"></td>
+            <td>AKSHAY KUMAR</td>
+            <td><img src="/image/camera.png" width="110px" height="100px"></td>
+            <td id="count">{{vot4}}</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img src="/image/hrithik.jpg" width="120px" height="100px"></td>
+            <td>HRITHIK ROSHAN</td>
+            <td><img src="/image/hat.bmp" width="110px" height="100px"></td>
+            <td id="count">{{vot5}}</td>
+        </tr>
+
+</table>
+</div>
+    <div class="winb">
+    <h2>WINNER IS...</h2>
+    <br>
+     <h2 >{{name}} </h2>
+     <h2 >with {{votes}} votes</h2>
+    
+    </div>
+
+
+<script>
+    if(window.history.replaceState){
+        window.history.replaceState(null,null,window.location.href);
+    }
+</script>
+
+</body>
+</html>
