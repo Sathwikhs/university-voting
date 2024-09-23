@@ -1,0 +1,84 @@
+body{
+    background-color: burlywood;
+    cursor: default;
+}
+#container{
+    height: 800px;
+    width: 800px;
+    padding: 2vmin;
+    border: 2px solid red;
+    border-radius: 2%;
+    background-color: aliceblue;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+#logobox{
+    height: 10%;
+    width: 50%;
+    padding: 2%;
+    overflow: hidden;
+}
+#logo{
+    background-image: url('../image/logo.webp');
+    background-size: cover;
+    padding-bottom: 1%;
+    height: 94%;
+    width: 66%;
+}
+#tb{
+    position: fixed;
+    top: 200px;
+    right: 5px;
+    height: 115px;
+    width: 200px;
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+p{
+    color: red;
+    font-weight: bolder;
+    font-size: 30px;
+}
+h2{
+    text-decoration: underline;
+}
+th{
+    font-size: 20px;
+    width: 150px;
+    color: blue;
+    border: 2px solid black;
+    padding: 2px;
+}
+td{
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 1px;
+    font-weight: bold;
+}
+button{
+    width: 100px;
+    height: 50px;
+    border: 3px solid red;
+}
+button:hover{
+    cursor: pointer;
+    background-color: chartreuse;
+}
+/*#scroll{
+    background-image: url('down.png');
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+    position: sticky;
+    bottom: 20px;
+    left: 40%;
+    opacity: 20%;
+}*/

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/indexstyle.css">
+</head>
+<body>
+
+    <h1>ONLINE VOTING SYSTEM</h1>
+    <div id="box">
+    <div id="logobox">
+        <div id="logo"></div>
+    </div>
+    <p>NEW USER</p>
+    <a  href="register.html"><h2>REGISTER</h2></a>
+    <br>
+    <p>EXISTING USER</p>
+    <a href="login.html"><h2>LOGIN</h2></a>
+    <p id="msg"></p>
+    </div>
+
+   
+    <script>
+         if(window.location.href=="http://localhost:3000/index"){
+            document.getElementById("msg").innerText="Registration Successfull";
+        }
+    </script>
+
+</body>
+</html>

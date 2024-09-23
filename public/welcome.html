@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/welcomestyle.css">    
+</head>
+<body>
+ 
+
+<div id="tb">
+    <p>voting ends in</p>
+    <p id="demo"></p>
+    </div>
+    
+    <form id="timer" action="welcome" method="post">
+        <input type="hidden"  name="time" value="3">
+    </form>
+    
+        <h2>INSTRUCTIONS:</h2>
+        <div id="container">
+                <div id="logobox">
+                    <div id="logo"></div>
+                </div>
+    
+    
+            <table id="tab">
+                <tr>
+                    <th>SNO.</th>
+                    <th>PICTURE</th>
+                    <th>NAME</th>
+                    <th>SYMBOL</th>
+                    <th>VOTING</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="image/srk.jpeg" width="120px" height="100px"></td>
+                    <td>SHARUKH KHAN  </td>
+                    <td><img src="image/auto.png" width="110px" height="100px"></td>
+                    <td>    <form action="done" method="post">
+                        <input type="hidden"  name="voo" value="1">
+                        
+                        <button type="submit"   >VOTE</button>
+                    </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="image/salman.jpg" width="120px" height="100px"></td>
+                    <td>SALMAN KHAN  </td>
+                    <td><img src="image/helicopter.png" width="110px" height="100px"></td>
+                    <td>    <form action="done" method="post">
+                        <input type="hidden"  name="voo" value="2">
+                        
+                        <button type="submit"   >VOTE</button>
+                    </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="image/aamir.avif" width="120px" height="100px"></td>
+                    <td>AAMIR KHAN </td>
+                    <td><img src="image/laptop.png" width="110px" height="100px"></td>
+                    <td>    <form action="done" method="post">
+                        <input type="hidden"  name="voo" value="3">
+                        
+                        <button type="submit"   >VOTE</button>
+                    </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="image/akshay.avif" width="120px" height="100px"></td>
+                    <td>AKSHAY KUMAR  </td>
+                    <td><img src="image/camera.png" width="110px" height="100px"></td>
+                    <td>    <form action="done" method="post">
+                        <input type="hidden"  name="voo" value="4">
+                        
+                        <button type="submit"   >VOTE</button>
+                    </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><img src="image/hrithik.jpg" width="120px" height="100px"></td>
+                    <td>HRITHIK ROSHAN  </td>
+                    <td><img src="image/hat.bmp" width="110px" height="100px"></td>
+                    <td>    <form action="done" method="post">
+                        <input type="hidden"  name="voo" value="5">
+                        
+                        <button type="submit"   >VOTE</button>
+                    </form>
+                    </td>
+                </tr>  
+        </table>
+    
+        <div id="scroll"></div>
+        </div>
+      
+     <p id="msg"></p>
+
+<script src="wel.js"></script>
+
+</body>
+</html>

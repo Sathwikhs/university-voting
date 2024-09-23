@@ -1,0 +1,50 @@
+body{
+    background-color: burlywood;
+    cursor: default;
+}
+#box{
+    height: 500px;
+    width: 500px;
+    padding: 2vmin;
+    border: 2px solid black;
+    border-radius: 2%;
+    background-color: aliceblue;
+    position: absolute;
+    top: 20%;
+    left: 31%;
+}
+h1{
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 37%;
+}
+a{
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+    margin: 1%;
+    text-decoration: none;
+}
+a:hover{
+    transform: scale(1.05);
+}
+#logobox{
+    height: 25%;
+    width: 100%;
+    padding: 1%;
+    overflow: hidden;
+}
+#logo{
+    background-image: url('../image/logo.webp');
+    background-size: cover;
+    display: inline-block;
+    padding-bottom: 1%;
+    height: 80%;
+    width: 70%;
+}
+p{
+    font-weight: bolder;
+    font-size: large;
+    padding-left: 2%;
+}

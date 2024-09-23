@@ -1,0 +1,84 @@
+body{
+    background-color: burlywood;
+    cursor: default;
+}
+#container{
+    height: 800px;
+    width: 800px;
+    padding: 2vmin;
+    border: 2px solid red;
+    border-radius: 2%;
+    background-color: aliceblue;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+}
+#logobox{
+    height: 10%;
+    width: 50%;
+    padding: 2%;
+    overflow: hidden;
+}
+#logo{
+    background-image: url('../image/logo.webp');
+    background-size: cover;
+    padding-bottom: 1%;
+    height: 94%;
+    width: 66%;
+}
+th{
+    font-size: 20px;
+    width: 150px;
+    color: blue;
+    border: 2px solid black;
+    padding: 2px;
+}
+td{
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 1px;
+    font-weight: bold;
+}
+h1{
+    position: absolute;
+    top: 7%;
+    left: 36%;
+    text-decoration: solid underline;
+}
+
+
+#count{
+    font-size: 40px;
+    color: magenta;
+}
+#winner{
+    position: fixed;
+    top: 300px;
+    right: 120px;
+    border: 5px double green;
+    height: 200px;
+    width: 200px;
+}
+#winner:hover{
+    transition: all 1s ease-in-out 0s;
+    transform: scale(1.2);
+}
+
+
+h3{
+    /* position: fixed; */
+    top: 520px;
+    right: 190px;
+}
+.winb{
+    position: fixed;
+    text-align: center;
+    top: 190px;
+    right: 20px;
+    border: 2px solid rgb(239, 58, 8);
+    background-color: rgb(39, 218, 39);
+    height: 250px;
+    width: 350px;
+    border-radius: 30%;
+}

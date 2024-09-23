@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/loginstyle.css"> 
+</head>
+<body>
+  
+    
+<h1>LOGIN FORM</h1>
+<div id="formbox">
+    <div id="logobox">
+        <div id="logo"></div>
+    </div>
+<form action="welcome" method="post">
+
+    USN: <input type="number" name="id" required> <br>
+    PASSWORD:<input type="password" name="password" id="pass1" required><br>
+    <p style="color: red;" id="msg"></p>
+    <button type="submit" onclick="setTimeout(valid,1000)">SUBMIT</button>
+</form>
+</div>
+
+     <script>
+     function valid(){
+        if(window.location.href=="http://localhost:3000/login.html"){
+            document.getElementById("msg").innerText="Incorrect ID or Password";
+            setTimeout(pass,3000);
+        }
+      
+     }
+     function pass(){
+        document.getElementById("msg").innerText="";
+       }
+     </script>
+</body>
+</html>
+
+

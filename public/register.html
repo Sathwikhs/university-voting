@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/registerstyle.css">  
+</head>
+<body>
+
+<h1 id="reg">REGISTRATION FORM</h1>
+<div id="formbox">
+    <div id="logobox">
+        <div id="logo"></div>
+    </div>
+<form id="form1" action="index" method="post">
+    USN: <input type="number" name="id" placeholder="ex:21ETCS002122" required> <br>
+   NAME:  <input type="text" name="name" id="name" required><br>
+    MOBILE NUMBER: <input type="number"   name="phoneno"   required><br>
+   PASSWORD:<input type="password" name="password" id="pass1" minlength="6"   
+   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"  
+   title="Must contain at least one  number and one uppercase and lowercase letter, and at least 6 or more characters" 
+   required><br>
+   CONFIRM PASSWORD:<input type="password" name="conpassword" id="pass2" required><br>
+   <p style="color: red;" id="msg"></p>
+   
+    <button type="submit" id="sub" onclick="valid()">SUBMIT</button>
+</form>
+</div>
+
+
+    <script>
+    //    function myFunction() {
+    //        var x = document.getElementById("pass1");
+    //       if (x.type === "password") {
+    //           x.type = "text";
+    //           } 
+    //       else {
+    //            x.type = "password";
+    //         }
+    //       }
+    
+       function valid(){
+        if (document.getElementById("pass1").value!=document.getElementById("pass2").value){
+            document.getElementById("msg").innerText="Passwords not matching";
+            setTimeout(pass,2000);
+        }  
+
+       }
+       function pass(){
+        document.getElementById("msg").innerText="";
+       }
+
+         if(window.location.href=="http://localhost:3000/index"){
+            document.getElementById("msg").innerText="User id already Existed";
+        }
+
+
+
+       </script>
+  
+</body>
+</html>
